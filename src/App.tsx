@@ -7,11 +7,11 @@ import './App.css';
 class App extends Component {
 
   componentDidMount(): void {
-    console.log('aasas')
+    console.log('componentDidMount')
   }
 
-  componentDidUpdate(prevProps: Readonly<P>, prevState: Readonly<S>, snapshot?: SS): void {
-    console.log('12325')
+  componentDidUpdate(): void {
+    console.log('componentDidUpdate')
   }
 
   render() {
