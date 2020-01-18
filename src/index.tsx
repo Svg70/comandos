@@ -3,9 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
+import AppKolysikHook from "./AppKolyasikHook";
 
 let rerender = (): void => {
-    ReactDOM.render(<App />, document.getElementById('root'));
+    ReactDOM.render(<AppKolysikHook />, document.getElementById('root'));
 };
 
 setInterval(rerender, 1000);

@@ -17,8 +17,7 @@ class App extends Component {
 
     state = {
         counter: 1
-    }
-
+    };
 
     render() {
         return (
