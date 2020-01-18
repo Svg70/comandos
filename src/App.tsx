@@ -1,10 +1,5 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import './App.css';
-
-// import {Interface} from "readline";
-
-
 class App extends Component {
 
     componentDidMount(): void {
@@ -16,21 +11,23 @@ class App extends Component {
     }
 
     state = {
-        counter: 1
-    };
+        skillNikola: 1,
+
+    }
+
 
     render() {
         return (
             <div className="App">
-                <div>{this.state.counter}</div>
+                <div>Уровень знаний Колясика: {this.state.skillNikola}</div>
                 <button onClick={() => {
                     this.setState({
-                        counter: this.state.counter + 1
+                        counter: this.state.skillNikola + 1
                     })
                 }}>+
                 </button><button onClick={() => {
                     this.setState({
-                        counter: this.state.counter - 1
+                        counter: this.state.skillNikola - 1
                     })
                 }}>-
                 </button>
